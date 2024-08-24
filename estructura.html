@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main class="contenedor-principal">
+            <section class="logo-texto-botones">
+                <div class="logo">
+                    <img src="Dibujos/Logo.png">
+                </div>
+                <div><p class="copyright">	&#33 Solo letras minúsculas y sin acento</p></div>
+                <div class="texto-usuario">
+                    <textarea class="input-padron" id="textoUsuario" placeholder="ingresa el texto aqui"></textarea>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptador();" class="boton-encriptar">Encriptar</button>
+                    <button onclick="desencriptador();" class="boton-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="encriptado">
+                <div class="resultado"> 
+                    <div class="textoEncriptado" id="textoEncriptado"></div>
+                    <div class="muneco" id="muneco">
+                        <img class="imagen" src="Dibujos/Muñeco.png">
+                    </div>
+                    <div class="texto-ningun" id="texto-ningun">  
+                            <h1>Ningún mensaje fue encontrado</h1>
+                            <h2>Ingresa el texto que desee encriptar o desencriptar</h2>
+                    </div>  
+                    <div class="boton-copiar" id="boton-copiar">
+                        <button class="copiado" >Copiar</button>
+                    </div>              
+                </div>
+            </section>
+        </main>
+        <script src="logica.js"></script>
+        <footer>
+           
+        </footer>
+    </body>
+</html>   
